@@ -17,7 +17,7 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#portfolio" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <a href="#contact" class="btn-talk">Let's talk</a>
@@ -28,10 +28,10 @@
     <section id="home" class="section home-section">
         <div class="home-content">
             <div class="profile-image">
-                <img src="https://github.com/Lucdpt3105.png" alt="Phùng Anh Lực" onerror="this.src='./images/v1_5.png'">
+                <img src="images\BackgroundImage.png" alt="Phùng Anh Lực" onerror="this.src='./images/v1_5.png'">
             </div>
             <div class="home-text">
-                <h1>Multimedia Techonology Student</h1>
+                <h1>Fullstack Developer</h1>
                 <p>Hi, I'm Phùng Anh Lực. A passionate student in PTITHCM and Full-stack Developer based in Vietnam</p>
                 <div class="tech-stack">
                     <span class="tech-title">Tech Stack</span>
@@ -45,11 +45,23 @@
                         <div class="icon-js" title="JavaScript">
                             <i class="fab fa-js"></i>
                         </div>
+                        <div class="icon-php" title="PHP">
+                            <i class="fab fa-php"></i>
+                        </div>
                         <div class="icon-python" title="Python">
                             <i class="fab fa-python"></i>
                         </div>
+                        <div class="icon-java" title="Java">
+                            <i class="fab fa-java"></i>
+                        </div>
                         <div class="icon-react" title="React">
                             <i class="fab fa-react"></i>
+                        </div>
+                        <div class="icon-figma" title="Figma">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <div class="icon-cpp" title="C++">
+                            <i class="fas fa-code"></i>
                         </div>
                         <div class="icon-node" title="Node.js">
                             <i class="fab fa-node"></i>
@@ -79,7 +91,9 @@
             
             <div class="about-content">
                 <div class="about-image">
-                    <img src="./images/z7080488800942_a31e6ed619756c4b749e3a61156bd7a6.jpg" alt="Phùng Anh Lực" class="about-profile-img">
+                    <div class="image-spotlight-wrapper">
+                        <img src="images\z7080488800942_a31e6ed619756c4b749e3a61156bd7a6.jpg" alt="Phùng Anh Lực" class="about-profile-img">
+                    </div>
                 </div>
                 <div class="about-text">
                     <p>I am a Software Engineering student with a passion for creating innovative and functional applications. I have experience in Python, Django, HTML, CSS, JavaScript, and MySQL. I am always eager to learn new technologies and skills to improve my craft. My goal is to create applications that not only work efficiently, but are user-friendly and solve real-world problems.</p>
@@ -90,106 +104,175 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Projects Section -->
     <section id="portfolio" class="section portfolio-section">
         <div class="portfolio-container">
-            <h2 class="section-title">Portfolio</h2>
+            <h2 class="section-title">Projects</h2>
             
-            <!-- Project 1 - Mini App E-Learning (Featured) -->
-            <div class="project-card featured">
-                <div class="project-image">
-                    <div class="project-placeholder learnify-placeholder">
-                        <div class="learnify-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                            <i class="fas fa-book-open"></i>
-                            <i class="fas fa-laptop-code"></i>
+            <!-- Backend Projects -->
+            <div class="project-category">
+                <h3 class="category-title">
+                    <i class="fas fa-server"></i> Backend Development
+                </h3>
+                
+                <!-- Project 1 - MegaLearning (PHP/Laravel) -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="images\Screenshot (581).png" alt="MegaLearning Platform" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>MegaLearning Platform </h3>
+                        <h4>Đồ án cuối kỳ nhập môn công nghệ phần mềm</h4>
+                        <p>A comprehensive e-learning platform built with Laravel. Features include course management, user authentication, enrollment system, progress tracking, and quiz functionality. Demonstrates strong backend development skills with Laravel and MySQL.</p>
+                        <div class="tech-badges">
+                            <span class="badge badge-backend">PHP</span>
+                            <span class="badge badge-backend">Laravel</span>
+                            <span class="badge badge-backend">MySQL</span>
+                            <span class="badge badge-backend">REST API</span>
                         </div>
-                        <span>MINIAPPHOTROHOCTAP</span>
-                        <p class="learnify-subtitle">The Future of Learning</p>
+                        <div class="project-links">
+                            <!-- <a href="https://github.com/Lucdpt3105/MegaLearning" target="_blank" class="btn-view">View Project</a> -->
+                            <a href="https://github.com/Lucdpt3105/MegaLearning" target="_blank" class="btn-git">Git Code</a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-info">
-                    <h3>Mini App E-Learning- Nhập môn phần mềm🎓</h3>
-                    <p>A comprehensive online learning platform built for students and teachers. The application provides key features including course management, quizzes, exams, progress tracking, discussion forums, and gamification elements. Built using Python (Django) and MySQL with a focus on user experience and intuitive navigation. This project demonstrates full-stack development skills including database design, backend API development, and frontend implementation.</p>
-                    <div class="tech-badges">
-                        <span class="badge">Python</span>
-                        <span class="badge">Django</span>
-                        <span class="badge">MySQL</span>
-                        <span class="badge">HTML/CSS/JS</span>
+
+                <!-- Project 2 - Restaurant Management System (Laravel) -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images\Screenshot (579).png" alt="Restaurant Management System" class="project-img">
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Lucdpt3105/software-engineering-lab1" target="_blank" class="btn-view">View Project</a>
-                        <a href="https://github.com/Lucdpt3105/software-engineering-lab1" target="_blank" class="btn-git">Git Code</a>
+                    <div class="project-info">
+                        <h3>Restaurant Management System 🍽️</h3>
+                        <p>A restaurant management system built with Laravel. Features table reservation, menu management, order processing, and inventory tracking. Implements authentication, Eloquent ORM, and RESTful API design.</p>
+                        <div class="tech-badges">
+                            <span class="badge badge-backend">PHP</span>
+                            <span class="badge badge-backend">Laravel</span>
+                            <span class="badge badge-backend">MySQL</span>
+                            <span class="badge">HTML/CSS/JS</span>
+                        </div>
+                        <div class="project-links">
+                            
+                            <a href="https://github.com/Lucdpt3105/RestaurantUsingLaravel" target="_blank" class="btn-git">Git Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Project 3 - Vehicle E-Commerce (Vanilla PHP) -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images\Screenshot (578).png" alt="Vehicle E-Commerce Platform" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Vehicle E-Commerce Platform 🚗</h3>
+                        <p>A vehicle e-commerce platform built with vanilla PHP. Features product catalog, shopping cart, user authentication, and order management using the classicmodels MySQL database.</p>
+                        <div class="tech-badges">
+                            <span class="badge badge-backend">PHP</span>
+                            <span class="badge badge-backend">MySQL</span>
+                            <span class="badge badge-backend">Session Management</span>
+                            <span class="badge">HTML/CSS/JS</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- <a href="https://github.com/Lucdpt3105/MiniProjectVehicleEcommerce" target="_blank" class="btn-view">View Project</a> -->
+                            <a href="https://github.com/Lucdpt3105/MiniProjectVehicleEcommerce" target="_blank" class="btn-git">Git Code</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Project 2 - Weather App -->
-            <div class="project-card">
-                <div class="project-image">
-                    <div class="project-placeholder weather-placeholder">
-                        <i class="fas fa-cloud-sun"></i>
-                        <span>Weather App</span>
+
+            <!-- Frontend Projects -->
+            <div class="project-category">
+                <h3 class="category-title">
+                    <i class="fas fa-palette"></i> Frontend Development
+                </h3>
+
+                <!-- Project 1 - Weather App -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images\Screenshot (580).png" alt="Weather App" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather App 🌤️</h3>
+                        <p>A weather application providing real-time weather data for any city worldwide. Features temperature display, weather descriptions, humidity readings, and dynamic city backgrounds using OpenWeather and Unsplash APIs.</p>
+                        <div class="tech-badges">
+                            <span class="badge badge-frontend">HTML</span>
+                            <span class="badge badge-frontend">CSS</span>
+                            <span class="badge badge-frontend">JavaScript</span>
+                            <span class="badge badge-frontend">API</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- <a href="https://github.com/Lucdpt3105/Weatherweb" target="_blank" class="btn-view">View Project</a> -->
+                            <a href="https://github.com/Lucdpt3105/Weatherweb" target="_blank" class="btn-git">Git Code</a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-info">
-                    <h3>Weather App 🌤️</h3>
-                    <p>A simple and intuitive weather application that provides real-time weather information for any city worldwide. Features include temperature display, weather descriptions, humidity, pressure readings, and dynamic background images that change based on the searched city. The app includes 6 random city suggestions and is fully responsive across all devices. Built using OpenWeather API and Unsplash API for beautiful city backgrounds.</p>
-                    <div class="tech-badges">
-                        <span class="badge">HTML</span>
-                        <span class="badge">CSS</span>
-                        <span class="badge">JavaScript</span>
-                        <span class="badge">API</span>
+
+                <!-- Project 2 - Restaurant Landing Page -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images\Screenshot (582).png" alt="HL-Elite Cuisine Restaurant" class="project-img">
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Lucdpt3105/Weatherweb" target="_blank" class="btn-view">View Project</a>
-                        <a href="https://github.com/Lucdpt3105/Weatherweb" target="_blank" class="btn-git">Git Code</a>
+                    <div class="project-info">
+                        <h3>HL-Elite Cuisine Restaurant 🍽️</h3>
+                        <p>An elegant restaurant landing page showcasing menu, ambiance, and culinary excellence. Features smooth scrolling navigation, interactive sections, and fully responsive design built with clean HTML, CSS, and JavaScript.</p>
+                        <div class="tech-badges">
+                            <span class="badge badge-frontend">HTML</span>
+                            <span class="badge badge-frontend">CSS</span>
+                            <span class="badge badge-frontend">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://lucdpt3105.github.io/HL-lite-Cuisine-Restaurant-landing-page/?guestName=Hello" target="_blank" class="btn-view">View Project</a>
+                            <a href="https://github.com/Lucdpt3105/HL-Elite-Cuisine-Restaurant-landing-page" target="_blank" class="btn-git">Git Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Music Streaming Spec -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images\Screenshot (583).png" alt="Music Streaming Platform" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Mini project Giua Ky CNPM 🎵</h3>
+                        <p>A music streaming platform design specification featuring user interface mockups, user flows, and interactive prototypes. Showcases UX/UI design skills with comprehensive wireframes and high-fidelity designs for a modern music streaming experience.</p>
+                        <div class="tech-badges">
+                            <span class="badge badge-frontend">Figma</span>
+                            <span class="badge badge-frontend">UI/UX Design</span>
+                            <span class="badge badge-frontend">Prototyping</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-view">View Github Project</a>
+                            <a href="https://github.com/Lucdpt3105/github.com-Lucdpt3105-music-streaming-spec" target="_blank" class="btn-git">Git Code</a>
+                            <a href="https://lucdpt3105.github.io/github.com-Lucdpt3105-music-streaming-spec./" target="_blank" class="btn-git">Git Code</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Project 3 - Restaurant Landing Page -->
-            <div class="project-card">
-                <div class="project-image">
-                    <div class="project-placeholder restaurant-placeholder">
-                        <i class="fas fa-utensils"></i>
-                        <span>Restaurant</span>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>HL-Elite Cuisine Restaurant 🍽️</h3>
-                    <p>An elegant and modern landing page for a fine dining restaurant. The website showcases the restaurant's menu, ambiance, and culinary excellence through a visually appealing design. Features include smooth scrolling navigation, interactive menu sections, beautiful image galleries, and responsive design that works seamlessly on all devices. Built with clean HTML, CSS, and JavaScript to create an immersive user experience.</p>
-                    <div class="tech-badges">
-                        <span class="badge">HTML</span>
-                        <span class="badge">CSS</span>
-                        <span class="badge">JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Lucdpt3105/HL-Elite-Cuisine-Restaurant-landing-page" target="_blank" class="btn-view">View Project</a>
-                        <a href="https://github.com/Lucdpt3105/HL-Elite-Cuisine-Restaurant-landing-page" target="_blank" class="btn-git">Git Code</a>
-                    </div>
-                </div>
-            </div>
+            <!-- Prototype & Design -->
+            <div class="project-category">
+                <h3 class="category-title">
+                    <i class="fas fa-pencil-ruler"></i> Prototype & Design
+                </h3>
 
-            <!-- Project 4 - Snake Game -->
-            <div class="project-card">
-                <div class="project-image">
-                    <div class="project-placeholder snake-placeholder">
-                        <i class="fas fa-gamepad"></i>
-                        <span>Snake Game</span>
+                <!-- Project 1 - Movie Streaming Prototype -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images\Screenshot (584).png" alt="Movie Streaming Prototype" class="project-img">
                     </div>
-                </div>
-                <div class="project-info">
-                    <h3>Console Snake Game 🐍</h3>
-                    <p>A classic console-based Snake game written in C++ for Windows. Control the snake using WASD keys, eat fruits to gain points (+10 per fruit), and avoid hitting the walls. Features real-time keyboard input, randomly spawning fruits, increasing difficulty as score increases, and clean ASCII graphics rendering. A nostalgic throwback to classic gaming that demonstrates fundamental programming concepts including loops, arrays, and game logic.</p>
-                    <div class="tech-badges">
-                        <span class="badge">C++</span>
-                        <span class="badge">Game Dev</span>
-                        <span class="badge">Console App</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Lucdpt3105/Snake-Game" target="_blank" class="btn-view">View Project</a>
-                        <a href="https://github.com/Lucdpt3105/Snake-Game" target="_blank" class="btn-git">Git Code</a>
+                    <div class="project-info">
+                        <h3>Movie Streaming Platform Prototype 🎬</h3>
+                        <p>A comprehensive movie streaming platform prototype featuring user interface mockups, user flows, and interactive prototypes. Showcases UX/UI design skills with wireframes and high-fidelity designs for a modern streaming experience.</p>
+                        <div class="tech-badges">
+                            <span class="badge badge-design">Figma</span>
+                            <span class="badge badge-design">UI/UX Design</span>
+                            <span class="badge badge-design">Prototyping</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.figma.com/proto/nwLr42sqJayeoRvdUrwpN6/Draft-of-Movie-Streaming-Website?page-id=0%3A1&node-id=1-1307&viewport=119%2C-5%2C0.05&t=MDEEZUMTRHesikGt-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A534" target="_blank" class="btn-view">View Prototype</a>
+                            <!-- <a href="https://github.com/Lucdpt3105/github.com-Lucdpt3105-music-streaming-spec" target="_blank" class="btn-git">Git Spec</a> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -227,60 +310,56 @@
                         <div class="contact-icon github-icon">
                             <i class="fab fa-github"></i>
                         </div>
-                        <a href="https://github.com/Lucdpt3105" target="_blank" style="color: rgba(255,255,255,0.9);">github.com/Lucdpt3105</a>
+                        <a href="https://github.com/Lucdpt3105" target="_blank">github.com/Lucdpt3105</a>
                     </div>
                 </div>
                 
-                <div class="contact-image">
-                    <img src="./images/Comp 1_1.gif" alt="Contact Animation" class="contact-gif">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h3>Send me a message</h3>
+                    <!-- Using Formspree - posts to provided action and redirects to thank-you.html -->
+                    <form class="contact-form" action="https://formspree.io/f/xyznpzee" method="POST">
+                        <!-- Formspree Configuration -->
+                        <!-- _replyto is used by Formspree to set the reply-to header -->
+                        <input type="hidden" name="_replyto" id="_replyto" />
+                        <!-- Redirect to local thank-you page after successful submit -->
+                        <input type="hidden" name="_next" value="./thank-you.html">
+                        <!-- Honeypot for bots -->
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Your Name
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Your Email
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i> Subject
+                            </label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i> Message
+                            </label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required aria-required="true"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
                 </div>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="contact-form-section">
-                <h3>Send me a message</h3>
-                <!-- Using Formspree - posts to provided action and redirects to thank-you.html -->
-                <form class="contact-form" action="https://formspree.io/f/xyznpzee" method="POST">
-                    <!-- Formspree Configuration -->
-                    <!-- _replyto is used by Formspree to set the reply-to header -->
-                    <input type="hidden" name="_replyto" id="_replyto" />
-                    <!-- Redirect to local thank-you page after successful submit -->
-                    <input type="hidden" name="_next" value="./thank-you.html">
-                    <!-- Honeypot for bots -->
-                    <input type="text" name="_gotcha" style="display:none">
-
-                    <div class="form-group">
-                        <label for="name">
-                            <i class="fas fa-user"></i> Your Name
-                        </label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required aria-required="true">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">
-                            <i class="fas fa-envelope"></i> Your Email
-                        </label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required aria-required="true">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">
-                            <i class="fas fa-tag"></i> Subject
-                        </label>
-                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required aria-required="true">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">
-                            <i class="fas fa-comment"></i> Message
-                        </label>
-                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required aria-required="true"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-submit">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
             </div>
 
             <div class="social-links-footer">
