@@ -992,6 +992,43 @@ html {
     padding-top: 40px;
 }
 
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 15px rgba(102, 126, 234, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0px 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+.back-to-top:active {
+    transform: translateY(-3px) scale(1.05);
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .navbar {
@@ -1077,6 +1114,14 @@ html {
         width: 250px;
         height: 250px;
     }
+    
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1108,5 +1153,13 @@ html {
     .profile-image img {
         width: 200px;
         height: 200px;
+    }
+    
+    .back-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
     }
 }

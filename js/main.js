@@ -155,4 +155,24 @@ const createMobileMenu = () => {
 // Initialize mobile menu
 createMobileMenu();
 
+// Back to Top Button Functionality
+const backToTopButton = document.getElementById('backToTop');
+
+// Show/hide button on scroll
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+});
+
+// Scroll to top when button is clicked
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
 console.log('Portfolio website loaded successfully!');
